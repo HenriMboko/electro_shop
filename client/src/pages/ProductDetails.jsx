@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { Container, Row, Card, Button, Col, Image, ListGroup, FormControl } from 'react-bootstrap'
 import Rating from '../components/Rating'
 

@@ -45,6 +45,8 @@ main {
 }
 
 
+
+
 .navbar-brand, .nav-link {
   color: white;
 }
@@ -67,3 +69,66 @@ a{
   background-color: #1f68d4ce;
   border: 1px solid #1f68d4ce;
 }
+
+
+
+.loadingSpinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loadingSpinner::after{
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 1.2s ease infinite;
+}
+
+
+@keyframes loading {
+  from {transform: rotate(0turn);}
+  to {transform: rotate(1turn);}
+}
+
+.btn-custom {
+  color: black;
+  background-color: #f1f1f1;
+  border: 1px solid #1f68d4ce;
+  text-transform: uppercase;
+  width: 150px;
+  font-size: 13px;
+}
+
+.btn-custom::after{
+  background-color: black;
+  color: white;
+}
+
+.btn-logout {
+  color: black;
+  background-color: #f1f1f1;
+  border: 1px solid #1f68d4ce;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 80px;
+  height: 25px;
+  font-size: 13px;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-logout::after{
+  background-color: black;
+  color: white;
+}
+
